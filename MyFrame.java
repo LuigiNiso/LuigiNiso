@@ -10,6 +10,7 @@ public class MyFrame extends JFrame implements ActionListener{
   private  Vector<JButton> primi = new Vector<JButton>();
   private  Vector<JButton> secondi = new Vector<JButton>();
   private  Vector<JButton> dolci = new Vector<JButton>();
+  private int counter;
 
   //*GENERAL PANEL
   JPanel pnlView = new JPanel();
@@ -55,6 +56,8 @@ public class MyFrame extends JFrame implements ActionListener{
     JButton btnCategory = new JButton(name);
     btnCategory.addActionListener(this);
     btnCategory.setActionCommand(name);
+    this.counter = 0;
+    System.out.println(counter);
     pnl.add(btnCategory);
   }
 
